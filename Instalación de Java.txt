@@ -1,12 +1,14 @@
-1 Actualizacion de paquetes 
+1 
+
+2 Actualizacion de paquetes 
 
 sudo apt update 
 
-2 Instalacion de java 21 (jdk)
+3 Instalacion de java 21 (jdk)
 
 apt install -y openjdk-21-jdk
 
-3 Configurar la variable de entorno para el uso de Java 
+4 Configurar la variable de entorno para el uso de Java 
 
 echo 'export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64' >> ~/.bashrc && source ~/.bashrc
 
