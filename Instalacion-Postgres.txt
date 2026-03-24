@@ -1,0 +1,44 @@
+1-Autenticasion como root 
+
+sudo su
+
+2-instalar el gestor de base de datos(Posgres) y actualizacion de paquetes 
+
+apt update -y 
+apt install postgresql postgresql-contrib
+
+3-Instalar la versión más reciente
+
+brew install postgresql
+
+4-Iniciar el servicio
+
+brew services start postgresql
+
+5-Iniciar servicio:    sudo systemctl start postgresql
+
+6-Detener servicio:    sudo systemctl stop postgresql
+
+7-Reiniciar servicio:  sudo systemctl restart postgresql
+
+8-Ver estado:   sudo systemctl status postgresql
+
+
+9-Entrar a la consola de Postgres (Terminal):
+
+-u postgres psql
+
+10-Cambiar la contraseña del usuario administrador
+
+ALTER USER postgres WITH PASSWORD 'cisco123'  <----- Nota como ejemplo esta la contraseña 
+
+11-Crear una base de datos
+
+CREATE DATABASE BD-Proyecto  <----- Nota como ejemplo el nombre de  la base de datos
+
+12-Salir de la consola psql
+
+\q
+
+
+
