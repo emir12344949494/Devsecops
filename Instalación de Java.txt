@@ -1,4 +1,6 @@
-1 
+1 Autenticasion como root 
+
+sudo su 
 
 2 Actualizacion de paquetes 
 
