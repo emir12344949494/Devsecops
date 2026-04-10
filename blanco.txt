@@ -1,0 +1,28 @@
+1-Actualizar el sistema
+
+
+sudo apt update && sudo apt upgrade -y
+
+2-INstalacion de Java 
+
+sudo apt install openjdk-17-jdk -y
+
+3-Importar la llave GPG y el Repositorio
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5BA31D57EF474B92 7198F4B714ABFC68
+
+4-Agregar el repositorio
+
+echo "deb https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+5-Instalar Jenkins
+
+sudo apt update
+sudo apt install jenkins -y
+
+6-Iniciar y habilitar el servicio
+
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+
+
